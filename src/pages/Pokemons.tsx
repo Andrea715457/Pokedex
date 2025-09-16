@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 
 const Pokemons = () => {
@@ -10,7 +11,7 @@ const Pokemons = () => {
     <main>
         <h1>POKEMONS</h1>
     </main>
-    <footer>FOOTER</footer>
+    <Footer/>
     </>
     );
 };
