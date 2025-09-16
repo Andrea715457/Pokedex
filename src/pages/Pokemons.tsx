@@ -1,9 +1,18 @@
-import React from "react";
-import { useParams } from "react-router-dom";
+import React, { useState } from "react";
+import Header from "../components/Header";
+
 
 const Pokemons = () => {
-    const { name } = useParams();
-    return <div>{name}</div>
+    const [query, setQuery] = useState("BULBASAUR");
+    return (
+    <>
+    <Header query={query} setQuery={setQuery}/>
+    <main>
+        <h1>POKEMONS</h1>
+    </main>
+    <footer>FOOTER</footer>
+    </>
+    );
 };
 
-export default Pokemons
+export default Pokemons;
